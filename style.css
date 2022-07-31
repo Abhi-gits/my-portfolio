@@ -16,7 +16,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    background: green;
+    background: rgb(10, 11, 10);
 }
 
 nav {
@@ -88,19 +88,16 @@ div.detail {
     color: white;
 }
 
-span.leader {
-    color: rgb(16, 238, 16);
-    font-family: 'Brush Script MT';
-}
-
-span.leader:hover {
-    color: white;
-}
 
 .detail p {
     color: #fffb06;
     line-height: 22px;
     text-overflow: break-word;
+    font-weight: bold;
+}
+
+.detail p:hover{
+    color: #fa9304;
 }
 
 .detail a {
@@ -123,14 +120,16 @@ div a:hover {
 .images img {
     width: 55%;
     height: 65%;
-    margin-left: 20%;
-    margin-top: 16%;
-    border-radius: 100px;
+    margin-left: 25%;
+    margin-top: 10%;
+    border-radius: 70px;
+    background-color: black;
     align-items: center;
+    border-style:inset;
 }
 
 .images {
-    width: 80%;
+    width: 90%;
     margin-left: 20%;
 }
 
@@ -143,7 +142,7 @@ div a:hover {
 }
 
 h1:hover {
-    color: fuchsia;
+    color: rgb(5, 5, 245);
 }
 
 .About {
@@ -152,8 +151,9 @@ h1:hover {
     margin-top: 5px;
     height: 100%;
     content: none;
-    background: rgba(8, 161, 212, 0.315);
+    background: rgba(189, 216, 205, 0.844);
     text-align: center;
+    background-image: url(img/me.jpg);
 }
 
 .About div.me {
@@ -164,17 +164,35 @@ h1:hover {
     font-size: 20px;
 }
 
+.me:hover{
+    font-weight: bold;
+}
+
 .Skills {
     margin-left: 0;
-    padding: 10px 20px 20px 20%;
+    padding: 50px 20px 20px 20%;
     margin-top: 3em;
     text-align: left;
-    outline: solid rgb(10, 10, 10) 2px;
+    outline: solid rgb(182, 6, 6) 2px;
+    background-image: url(img/pic1.png);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-image:-webkit-gradient(0.2);
 }
 
 .Skills span {
     display: inline-flex;
     justify-content: space-evenly;
+    color: #c9fa04;
+    font-size: large;
+}
+.Skills span h1{
+    color: black;
+}
+
+.Skills span:hover{
+    font-weight: bold;
 }
 
 .Tools {
@@ -184,16 +202,19 @@ h1:hover {
 .project {
     height: 100%;
     padding: 50px;
-    background: rgba(201, 180, 63, 0.678);
+    background: rgba(38, 234, 13, 0.992);
     text-align: center;
+    background-image: url(img/R.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .project ul li {
-    background: rgb(138, 101, 153);
+    background: rgb(52, 29, 61);
     padding: 20px 15px;
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: rgb(0, 0, 0);
     display: inline-block;
     margin: 70px;
     border-radius: 5px;
@@ -217,9 +238,12 @@ div.project ul {
 .Contact {
     height: 100%;
     padding: 50px;
-    background: rgba(33, 121, 33, 0.678);
+    background: rgba(117, 117, 111, 0.892);
     text-align: center;
     overflow-block: auto;
+    background-image: url(img/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .Contact span {
@@ -294,7 +318,7 @@ div.project ul {
 /* Style the front side */
 
 .flip-box-front {
-    background-color: #bbb;
+    background-color: rgb(156, 214, 112);
     color: black;
 }
 
