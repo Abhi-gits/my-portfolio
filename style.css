@@ -1,376 +1,259 @@
-* {
-    font-family: sans-serif;
-    /*outline: solid #f00 1px !important;*/
-}
+/*this is main file for index.html   */
 
-html {
-    min-width: 100%;
-    background-size: contain;
-}
-
-body {
-    margin: 0px !important;
-}
-
-.hero {
-    position: relative;
-    width: 100%;
+.wrapper {
     height: 100%;
-    background: rgb(10, 11, 10);
-}
-
-nav {
-    display: flex;
-    width: 85%;
-    margin: auto;
-    padding: 20px 10px;
-    align-items: center;
-    color: red;
-    justify-content: space-between;
-}
-
-.logo {
-    cursor: pointer;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-
-nav img {
-    height: 100px;
-    width: 10%;
-    background-color: powderblue;
-}
-
-nav ul li {
-    text-decoration: none;
-    color: rgb(30, 204, 204) !important;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-nav ul li a:hover {
-    color: red;
-}
-
-h2 {
-    color: rgb(204, 14, 30);
-    text-shadow: lightgreen;
-}
-
-.d1 h3 {
-    color: aquamarine;
-}
-
-.detail {
-    margin: 10px 0px 10px 45px;
-    padding: 90px 30px 20px 40px;
-    height: 100%;
-}
-
-div.detail {
-    display: flex;
-    overflow-block: scroll;
-    justify-content: space-evenly;
-}
-
-.detail h2 {
-    font-size: 60px;
-    color: rgb(204, 14, 30);
-    margin-bottom: 0;
-    font-family: 'Brush Script MT';
-}
-
-.detail h2:hover {
-    color: white;
-}
-
-
-.detail p {
-    color: #fffb06;
-    line-height: 22px;
-    text-overflow: break-word;
-    font-weight: bold;
-}
-
-.detail p:hover{
-    color: #fa9304;
-}
-
-.detail a {
-    background: #212121;
-    padding: 10px 18px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    display: inline-block;
     margin: 0;
-    border-radius: 2px;
+    padding: 0;
+    /* width: 100%;
+    background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423); 
+    position: absolute; */
 }
 
-div a:hover {
-    /* color: rgb(10, 10, 10);*/
-    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 25px #ff96ad;
-    background: gold;
-}
-
-.images img {
-    width: 55%;
-    height: 65%;
-    margin-left: 25%;
-    margin-top: 10%;
-    border-radius: 70px;
-    background-color: black;
-    align-items: center;
-    border-style:inset;
-}
-
-.images {
-    width: 90%;
-    margin-left: 20%;
-}
-
-
-/*to diplay pic in circular frame*/
-
-.images:hover {
-    left: 20px;
-    transition: 1s;
-}
-
-h1:hover {
-    color: rgb(5, 5, 245);
-}
-
-.About {
-    border: 8vh;
-    padding: 20px 10px 10px 10px;
-    margin-top: 5px;
-    height: 100%;
-    content: none;
-    background: rgba(189, 216, 205, 0.844);
-    text-align: center;
-    background-image: url(img/me.jpg);
-}
-
-.About div.me {
-    padding: 1.5em 2em 0 4em;
-}
-
-.About p {
-    font-size: 20px;
-}
-
-.me:hover{
-    font-weight: bold;
-}
-
-.Skills {
-    margin-left: 0;
-    padding: 50px 20px 20px 20%;
-    margin-top: 3em;
-    text-align: left;
-    outline: solid rgb(182, 6, 6) 2px;
-    background-image: url(img/pic1.png);
-    background-repeat: no-repeat;
-    background-position: fixed;
-    background-size: cover;
-    background-image:-webkit-gradient(0.2);
-}
-
-.Skills span {
-    display: inline-flex;
-    justify-content: space-evenly;
-    color: #c9fa04;
-    font-size: large;
-}
-.Skills span h1{
-    color: black;
-}
-
-.Skills span:hover{
-    font-weight: bold;
-}
-
-.Tools {
-    padding-left: 25%;
-}
-
-.project {
-    height: 100%;
-    padding: 50px;
-    background: rgba(38, 234, 13, 0.992);
-    text-align: center;
-    background-image: url(img/R.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.project ul li {
-    background: rgb(52, 29, 61);
-    padding: 20px 15px;
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    display: inline-block;
-    margin: 70px;
-    border-radius: 5px;
-}
-
-div.project ul {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.flip-project {
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.flip-project:hover {
-    transform: rotateY(180deg);
-}
-
-.Contact {
-    height: 100%;
-    padding: 50px;
-    background: rgba(117, 117, 111, 0.892);
-    text-align: center;
-    overflow-block: auto;
-    background-image: url(img/contact.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-.Contact span {
-    color: black;
-    padding: 10px 20px 10px 50px;
-    text-align: initial;
-    text-decoration: none;
-}
-
-.foo {
-    height: 100%;
-    padding: 50px;
-    background: #222831;
-    color: #fd7014;
-    text-align: center;
-}
-
-.foo span {
-    color: turquoise;
-}
-
-
-/* The flip box container - set the width and height. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-
-.flip-box {
-    background-color: transparent;
-    width: 300px;
-    height: 160px;
-    margin: 60px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-    /* Remove this if don't want the 3D effect */
-}
-
-
-/* This container is needed to position the front and back side */
-
-.flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-
-.flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-box-front h2 {
-    padding-top: 20px;
-}
-
-
-/* Position the front and back side */
-
-.flip-box-front,
-.flip-box-back {
+.wrapper section {
+    transform: translate(-50%, -50%);
+    height: 500%;
     position: absolute;
-    width: 100%;
+}
+
+.wrapper div {
+    height: 60px;
+    width: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: 4s linear infinite;
+}
+
+div .dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+.wrapper div:nth-child(1) {
+    top: 20%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+}
+
+.wrapper div:nth-child(2) {
+    top: 60%;
+    left: 80%;
+    animation: animate 10s linear infinite;
+}
+
+.wrapper div:nth-child(3) {
+    top: 40%;
+    left: 40%;
+    animation: animate 3s linear infinite;
+}
+
+.wrapper div:nth-child(4) {
+    top: 66%;
+    left: 30%;
+    animation: animate 7s linear infinite;
+}
+
+.wrapper div:nth-child(5) {
+    top: 90%;
+    left: 10%;
+    animation: animate 9s linear infinite;
+}
+
+.wrapper div:nth-child(6) {
+    top: 30%;
+    left: 60%;
+    animation: animate 5s linear infinite;
+}
+
+.wrapper div:nth-child(7) {
+    top: 70%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+}
+
+.wrapper div:nth-child(8) {
+    top: 75%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+
+.wrapper div:nth-child(9) {
+    top: 50%;
+    left: 50%;
+    animation: animate 6s linear infinite;
+}
+
+.wrapper div:nth-child(10) {
+    top: 45%;
+    left: 20%;
+    animation: animate 10s linear infinite;
+}
+
+.wrapper div:nth-child(11) {
+    top: 10%;
+    left: 90%;
+    animation: animate 9s linear infinite;
+}
+
+.wrapper div:nth-child(12) {
+    top: 20%;
+    left: 70%;
+    animation: animate 7s linear infinite;
+}
+
+.wrapper div:nth-child(13) {
+    top: 20%;
+    left: 20%;
+    animation: animate 8s linear infinite;
+}
+
+.wrapper div:nth-child(14) {
+    top: 60%;
+    left: 5%;
+    animation: animate 6s linear infinite;
+}
+
+.wrapper div:nth-child(15) {
+    top: 90%;
+    left: 80%;
+    animation: animate 9s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(70deg);
+    }
+    100% {
+        transform: scale(1.3) translateY(-100px) rotate(360deg);
+    }
+}
+
+
+/*card featured css animation
+
+.thirdSection div .featured-card {
+    width: 300px;
+    height: 300px;
+    border: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thirdSection div .featured-card::before {
+    content: "";
+    background-image: conic-gradient( #ff0052 20deg, transparent 120deg);
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+
+.thirdSection div .featured-card::after {
+    content: "Animation";
+    width: 290px;
+    height: 290px;
+    background: #101010;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(165, 38, 38);
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+*/
+
+
+/*card animation*/
+
+.card {
+    margin: 0 0 0 7.5em;
+    overflow: hidden;
+    position: relative;
+}
+
+.card,
+.card__texture {
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.card {
+    animation-name: rotate;
+    background-color: var(--primary);
+    background-image: radial-gradient(circle at 100% 0%, hsla(0, 0%, 100%, 0.08) 29.5%, hsla(0, 0%, 100%, 0) 30%), radial-gradient(circle at 100% 0%, hsla(0, 0%, 100%, 0.08) 39.5%, hsla(0, 0%, 100%, 0) 40%), radial-gradient(circle at 100% 0%, hsla(0, 0%, 100%, 0.08) 49.5%, hsla(0, 0%, 100%, 0) 50%);
+    border-radius: 1em;
+    box-shadow: 0 0 0 hsl(0, 10%, 90%), 0 0 0 hsl(0, 0%, 100%), -0.2rem 0 0.75rem 0 hsla(0, 0%, 0%, 0.3);
+    color: hsl(0, 0%, 100%);
+    width: 50vh;
+    height: 60vh;
+    transform: translate3d(0, 0, 0);
+}
+
+.card__texture {
+    position: absolute;
+    animation-name: texture;
+    animation-name: texture;
+    background-image: linear-gradient(-80deg, hsla(0, 0%, 100%, 0.3) 25%, hsla(0, 0%, 100%, 0) 45%);
+    top: 0;
+    left: 0;
+    width: 200%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
-    /* Safari */
-    backface-visibility: hidden;
 }
 
 
-/* Style the front side */
+/* Animation */
 
-.flip-box-front {
-    background-color: rgb(156, 214, 112);
-    color: black;
-}
-
-
-/* Style the back side */
-
-.flip-box-back {
-    background-color: dodgerblue;
-    color: white;
-    word-wrap: break-word;
-    padding: 2px;
-    transform: rotateY(180deg);
-}
-
-div .Contact ul {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 15px 20px 15px 20px;
-    margin: 30px;
-    border-radius: 25px;
-}
-
-.flip-box img {
-    height: 50px;
-    width: 20%;
-}
-
-.flip-box p {
-    font-style: italic;
-}
-
-@media screen and (max-width: 900px) {
-    div.detail {
-        display: flex;
-        flex-wrap: wrap;
+@keyframes rotate {
+    from,
+    to {
+        animation-timing-function: ease-in;
+        box-shadow: 0 0 0 hsl(0, 0%, 80%), 0.1rem 0 0 hsl(0, 0%, 100%), -0.2rem 0 0.75rem 0 hsla(0, 0%, 0%, 0.3);
+        transform: rotateY(-10deg);
     }
-    div.project ul {
-        width: 80%;
+    25%,
+    75% {
+        animation-timing-function: ease-out;
+        box-shadow: 0 0 0 hsl(0, 0%, 80%), 0 0 0 hsl(0, 0%, 100%), -0.25rem -0.05rem 1rem 0.15rem hsla(0, 0%, 0%, 0.3);
+        transform: rotateY(0deg);
     }
-    div.Contact ul {
-        width: 80%;
-        margin: 0;
-        padding: 0;
-    }
-    .flip-box-back {
-        overflow: scroll;
+    50% {
+        animation-timing-function: ease-in;
+        box-shadow: -0.1rem 0 0 hsl(0, 0%, 80%), 0 0 0 hsl(0, 0%, 100%), -0.3rem -0.1rem 1.5rem 0.3rem hsla(0, 0%, 0%, 0.3);
+        transform: rotateY(10deg);
     }
 }
 
-@media screen and (max-width: 600px) {
-    .tool h1 {
-        text-overflow: initial;
+@keyframes texture {
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(-50%, 0, 0);
     }
 }
