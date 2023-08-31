@@ -785,14 +785,14 @@
             var email = document.getElementById("email").value;
             var message = document.getElementById("message").value;
             console.log("function log 1");
-            // const smtp = require("smtpjs");
+
             const mailOptions = {
                 host: "smtp.gmail.com",
                 port: 465,
                 secure: true,
                 auth: {
                     user: "ravi37463@gmail.com",
-                    password: "aiaorqqoiwlzrzxa"
+                    password: "xyz"
                 },
                 from: "atb.0.2.g@gmail.com",
                 to: "ravi37463@gmail.com",
@@ -801,7 +801,7 @@
             };
             console.log("message sent");
 
-            //const client = smtp.createClient(mailOptions);
+
             Email.send(mailOptions)
                 .then(function(message) {
                     alert("Thankyou for your time, you are awsome!");
@@ -809,22 +809,7 @@
                 });
 
 
-            /* client.connect((err) => {
-                 if (err) {
-                     console.log(err);
-                     return;
-                 }
 
-
-                 client.sendMail((err) => {
-                     if (err) {
-                         console.log(err);
-                         return;
-                     }
-
-                     console.log("Email sent successfully!");
-                 });
-             });*/
         }
     </script>
     <script src="" async defer></script>
