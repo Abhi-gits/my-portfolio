@@ -694,7 +694,7 @@
             </div>
             <div class="wrap-contact100">
                 <h1>Contact</h1>
-                <form class="contact100-form validate-form" method="post">
+                <form class="contact100-form validate-form" id="myForm" method="post">
 
                     <div class="wrap-input100 validate-input" data-validate="Please enter your name">
                         <input class="input100" type="text" name="name" id="name" placeholder="Full Name">
@@ -805,6 +805,7 @@
             Email.send(mailOptions)
                 .then(function(message) {
                     alert("Thankyou for your time, you are awsome!");
+                    document.getElementById("myForm").reset();
                 });
 
 
